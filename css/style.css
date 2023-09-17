@@ -85,7 +85,7 @@ textarea {
    ========================================================================== */
 
    /* ======== Master Colors ========================= 
-   #fef8c , rgb(254, 248, 76) Yellow
+   #fef84c  rgb(254, 248, 76) Yellow
    #ffcb70 rgb(255, 203, 122) peach
    #9896g0 rgb(152, 150, 240) pastel blue
    #020381 rgb(2, 3, 129) dark blue
@@ -94,16 +94,62 @@ textarea {
    */
 
    html {
-    background-color: #ffcb70;
+    background-color: #fff;
    }
 
    body {
+    color: #000;
     width: 100%;
     padding: 4em 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+   }
+
+   .pg-wrapper {
+    padding: 2em;
+   }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: Playfair;
+      color: #020381;
+    }
+
+   h1 {
+    font-size: 2.1em;
+   }
+   span {
+    font-size: 2em;
+    padding-left: 3px;
+   }
+
+   h2 {
+    font-size: 1.75em;
+   }
+
+   h3 {
+    font-size: 1.25em;
+   }
+
+   h4 {
+    font-size: 1em;
+   }
+
+   h5 {
+    font-size: 1.25em;
+    color: #fef84c;
+   }
+
+   h6 {
+    font-size: 1em;
+    color: #fef84c;
+   }
+
+   p, a {
+    font-family: Roboto;
+    font-size: 1.5em;
+    color: #020381;
    }
 
 
@@ -191,7 +237,10 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+  .pg-wrapper {
+    background-image: "../img/family-beach.jpg"; /* image credit:Image by Dave Gerber from Pixabay */
+    border-radius: 20px;
+   }
 }
 
 @media print,
