@@ -84,6 +84,29 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* ======== Master Colors ========================= 
+   #fef8c , rgb(254, 248, 76) Yellow
+   #ffcb70 rgb(255, 203, 122) peach
+   #9896g0 rgb(152, 150, 240) pastel blue
+   #020381 rgb(2, 3, 129) dark blue
+   #663700 rgb(102, 55, 0) deep brown 
+   ====================================================
+   */
+
+   html {
+    background-color: #ffcb70;
+   }
+
+   body {
+    width: 100%;
+    padding: 4em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   }
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
