@@ -86,7 +86,7 @@ textarea {
 
    /* ======== Master Colors ========================= 
    #fef84c  rgb(254, 248, 76) Yellow
-   #ffcb70 rgb(255, 203, 122) peach
+   #fff5cb rgb(255, 245, 203) verylight beige
    #9896g0 rgb(152, 150, 240) pastel blue
    #020381 rgb(2, 3, 129) dark blue
    #663700 rgb(102, 55, 0) deep brown 
@@ -95,63 +95,169 @@ textarea {
 
    html {
     background-color: #fff;
+    width: 100%;
+   }
+
+   header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
    }
 
    body {
+    background-color: #fff5cb;
     color: #000;
-    width: 100%;
-    padding: 4em 1em;
+    max-width: 100%;
+    min-height: 640px;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
    }
 
    .pg-wrapper {
-    padding: 2em;
+    padding: 0;
    }
 
-    h1, h2, h3, h4, h5, h6 {
-      font-family: Playfair;
-      color: #020381;
-    }
+/* Navigation burger menu setup */
+nav {
+  text-align: center;
+}
 
-   h1 {
-    font-size: 2.1em;
-   }
-   
-   span {
-    font-size: 2em;
-    padding-left: 3px;
-   }
+#hamNav label {
+  display: inline-block;
+  font-size: 60px;
+  color: #152a3e !important;
+}
 
-   h2 {
-    font-size: 1.75em;
-   }
+#hamItems {
+  flex-wrap: wrap;
+}
+#hamItems {
+  display: none;
+}
+#hamNav input:checked ~ #hamItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#hamItems a:hover {
+  color: #152A3E;
+  text-decoration: none;
+}
+#hamburger {
+  display: none;
+}
 
-   h3 {
-    font-size: 1.25em;
-   }
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
 
-   h4 {
-    font-size: 1em;
-   }
+.logo img {
+  width: 250px;
+}
 
-   h5 {
-    font-size: 1.25em;
-    color: #fef84c;
-   }
+.intro-container {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
 
-   h6 {
-    font-size: 1em;
-    color: #fef84c;
-   }
+.intro-container img{
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
 
-   p, a {
-    font-family: Roboto;
-    font-size: 1.5em;
-    color: #020381;
-   }
+.main-container {
+  background-color: rgb(102, 55, 0);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Playfair;
+  color: #fff5cb;
+}
+
+h1 {
+font-size: 2.1em;
+}
+
+span {
+font-size: 2em;
+padding-left: 3px;
+}
+
+h2 {
+font-size: 1.75em;
+}
+
+h3 {
+font-size: 1.25em;
+}
+
+h4 {
+font-size: 1em;
+}
+
+h5 {
+font-size: 1.25em;
+color: #fef84c;
+}
+
+h6 {
+font-size: 1em;
+color: #fef84c;
+}
+
+p, a {
+  font-family: Roboto;
+  font-size: 1.5em;
+}
+
+p {
+  color: #fff;
+}
+
+a {
+  color: #020381;
+}
+
+a button {
+  font-family: Roboto;
+  background-color: #fef84c;
+  color: #020381;
+  border-radius: 20px;
+  border-color: #fff5cb;
+  padding: 0.5em 1em;
+  width: 100%;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+.highlight img {
+  width: 85%;
+  height: auto;
+}
+
+#contact {
+  background-color: #b3d4fc;
+}
+
+
+
 
 
 /* ==========================================================================
@@ -238,10 +344,39 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
+
+  #hamNav input:checked ~ #hamItems{
+    flex-flow: column;
+    padding-bottom: 10px;
+  }
+
+  #hamNav input:checked ~ #hamItems a {
+    padding-bottom: 30px;
+  }
+
   .pg-wrapper {
     background-image: "../img/family-beach.jpg"; /* image credit:Image by Dave Gerber from Pixabay */
     border-radius: 20px;
    }
+}
+
+@media only screen and (min-width: 70em) {
+  /* navigation to hide hamburger*/
+  #hamItems {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  #hamItems a {
+    width: 100%;
+    padding: 0px 45px;
+    color: #152A3E;
+  }
+
+  #hamNav label, #hamburger {
+    display: none;
+  }
 }
 
 @media print,

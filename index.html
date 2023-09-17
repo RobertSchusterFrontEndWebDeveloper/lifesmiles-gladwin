@@ -16,7 +16,7 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="manifest" href="site.webmanifest">
@@ -30,17 +30,54 @@
 <body>
   <div class="pg-wrapper">
     <header>
-      <nav>navigation</nav>
+      <div class="logo">
+        <img src="img/logo.png" alt="Lifesmiles logo" >
+      </div>
+      <nav id="hamNav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger">
+        <div id="hamItems">
+          <a href="team/index.html">Doctor</a> 
+          <a href="team/index.html#team">Team</a>
+          <a href="services/index.html">Services</a>
+          <a href="#contact">Contact</a>
+          <a href="financing/index.html">Finance</a>
+        </div>
+      </nav>
     </header>
-    <div>
-      <h1><span>LifeSmiles Dentistry</span> Gladwin</h1>
-      <p>Hello world! This is Lifesmiles Gladwin</p>
+    <div class="intro-container">
+      <img src="img/front-tree.jpg" alt="Office street view">
+    </div>
+    <div class="main-container">
+      <h1>Gladwin</h1>
+      <p>Welcome to Lifesmiles!</p>
+        <p>We invite you to visit our office to meet our friendly team.</p>
+        <a href="team/index.html"><button>Meet US</button></a>
+        <div class="highlight">
+          <img src="img/invisalign-view.jpg" alt="invisalign aligners">
+        </div>
+        <p>Invisalign is one of our top services and, we provide the most up-to-date dentistry<br>for the entire family,<br> in a relaxing atmosphere. </p>
+        <a href="services/index.html"><button>Services</button></a>
+        <p>Our office is conveniently located in down-town Gladwin, with plenty of free parking.</p>
+        <a href="#map"><button>Map</button></a>
+        <p>Office hours are<br> Monday through Friday.</p>
+        <a href="#contact"><button>Contact</button></a>
+      <p>Financing is available for all of the services that we provide.</p>
+      <a href="financing/index.html"><button>Financing</button></a>
     </div>
     <div>
-      <p>div 2</p>
+      <p></p>
     </div>
     <div>
       <p>div3</p>
+    </div>
+    <div id="contact">
+      <p>Phone:<br>(989) 426-4597</p>
+      <p>230 East Cedar Street<br>Gladwin, Mi </p>
+      <p>email</p>
+      <figure id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11483.668467149704!2d-84.49227729697901!3d43.98176357065185!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8821bd9f2fb3a41d%3A0xd9d96a61cb302bc!2sLifeSMILES%20of%20Gladwin!5e0!3m2!1sen!2sus!4v1694988206622!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+      </figure>
     </div>
   </div>
 </body>
