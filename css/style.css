@@ -95,7 +95,7 @@ textarea {
 
    html {
     background-color: #fff;
-    width: 100%;
+    max-width: 100%;
    }
 
    header {
@@ -252,9 +252,57 @@ a button {
   height: auto;
 }
 
-#contact {
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
   background-color: #b3d4fc;
 }
+
+.social p {
+  margin: 1em 0 0 0;
+}
+
+.social a {
+  font-size: 1.0em;
+}
+
+.social a button {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.social img {
+  width: 6em;
+  padding: 5px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: .5em 0 0 0;
+}
+
+footer {
+  background-color: #020381;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  color: #fff5cb;
+  font-size: .75em;
+  padding: 2px 0;
+}
+
+#contact p {
+  color: #020381;
+}
+
 
 
 
