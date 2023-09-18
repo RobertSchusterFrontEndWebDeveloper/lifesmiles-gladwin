@@ -16,8 +16,7 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
@@ -31,7 +30,7 @@
   <div class="pg-wrapper">
     <header>
       <div class="logo">
-        <img src="img/logo.png" alt="Lifesmiles logo" >
+        <img src="../img/logo.png" alt="Lifesmiles logo" >
       </div>
       <nav id="hamNav">
         <label for="hamburger">&#9776;</label>
@@ -40,21 +39,46 @@
           <a href="../team/index.html">Doctor</a> 
           <a href="../team/index.html#team">Team</a>
           <a href="../services/index.html">Services</a>
-          <a href="./index/#contact">Contact</a>
+          <a href="../index/#contact">Contact</a>
           <a href="#">Finance</a>
         </div>
       </nav>
     </header>
-    <div>
-      <h1>Gladwin</h1>
-      <p>Hello world! This is Financing</p>
+    <div class="main-container">
+      <h1>Financing</h1>
     </div>
-    <div>
-      <p>div 2</p>
-    </div>
-    <div>
-      <p>div3</p>
-    </div>
+      <!-- CHERRY WIDGET BEGIN --> 
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Slabo+27px&family=Lato&family=Raleway&family=Montserrat&family=Oswald&family=Poppins&family=Source+Sans+Pro&family=PT+Sans&family=Open+Sans&display=swap"rel="stylesheet"/>
+    <script>
+      (function (w, d, s, o, f, js, fjs) {
+          w[o] =
+              w[o] ||
+              function () {
+                  (w[o].q = w[o].q || []).push(arguments);
+              };
+          (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+          js.id = o;
+          js.src = f;
+          js.async = 1;
+          fjs.parentNode.insertBefore(js, fjs);
+      })(window, document, "script", "_hw", ' https://files.withcherry.com/widgets/widget.js');
+      _hw(
+          "init",
+          {
+              debug: false,
+              variables: {
+                  slug: 'lifesmilesdentistry',
+                  name: 'Lifesmiles Dentistry',
+              },
+              styles: {
+                  primaryColor: '#663700',
+                  secondaryColor: '#66370010',
+                  fontFamily: 'Roboto',
+              },
+          },
+          ["all", "hero", "howitworks", "testimony", "faq", "calculator"]
+      );
+  </script><div id="all"></div><!-- CHERRY WIDGET END -->
   </div>
   <footer>
     <p>©Copyright Lifesmiles Gladwin 2023</p>

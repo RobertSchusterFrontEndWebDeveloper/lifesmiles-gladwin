@@ -93,34 +93,34 @@ textarea {
    ====================================================
    */
 
-   html {
-    background-color: #fff;
-    max-width: 100%;
-   }
+html {
+  background-color: #fff;
+  max-width: 100%;
+}
 
-   header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   }
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-   body {
-    background-color: #fff5cb;
-    color: #000;
-    max-width: 100%;
-    min-height: 640px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   }
+body {
+  background-color: #fff5cb;
+  color: #000;
+  max-width: 100%;
+  min-height: 640px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-   .pg-wrapper {
-    padding: 0;
-   }
+.pg-wrapper {
+  padding: 0;
+}
 
 /* Navigation burger menu setup */
 nav {
